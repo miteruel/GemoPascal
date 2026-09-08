@@ -1,3 +1,5 @@
+**🇬🇧 English** | [🇪🇸 Español](README.es.md)
+
 # Gemma on-device chat (Delphi FMX + LiteRT/MediaPipe, Android)
 
 Runs a Gemma model fully on-device on Android - no cloud calls for inference - from a Delphi
