@@ -1,0 +1,45 @@
+# Gemma on-device chat - .gitignore
+#
+# Excluye solo lo que es reconstruible a partir del código fuente (cachés/salidas de build de
+# Gradle y Delphi, artefactos de empaquetado de Android, config local de la máquina). Todo lo
+# demás (fuentes .pas/.kt/.fmx, .dproj, recursos Android hechos a mano, documentación) se
+# versiona tal cual.
+
+# ---- Kotlin/Gradle (android-module/) ----
+android-module/.gradle/
+android-module/**/build/
+# SDK path local a la máquina del usuario (ver README - hay que crearlo con tu propia ruta)
+android-module/local.properties
+
+# .aar extraído/regenerado (ver instrucciones.md §1-2 para reconstruirlo)
+/aar/
+/llminference-release.aar.zip
+
+# ---- Delphi (delphi-app/) - unidades y binarios compilados ----
+delphi-app/*.dcu
+delphi-app/*.o
+delphi-app/*.res
+delphi-app/*.exe
+delphi-app/*.dproj.local
+delphi-app/*.identcache
+delphi-app/*.stat
+delphi-app/__history/
+delphi-app/__recovery/
+
+# ---- Delphi/Android - empaquetado del APK (todo regenerado por Build/Deploy) ----
+delphi-app/AndroidLibraryManifestList.txt
+delphi-app/AndroidManifest-merged.xml
+delphi-app/BuildClassesDex.stamp
+delphi-app/CompiledResources/
+delphi-app/CompiledResourcesList.txt
+delphi-app/DexList.txt
+delphi-app/DexPropertyList.txt
+delphi-app/ManifestGenerationPropertyList.txt
+delphi-app/ManifestMergePropertyList.txt
+delphi-app/PackagedResources.zip
+delphi-app/ResourceCompilePropertyList.txt
+delphi-app/ResourcePackagePropertyList.txt
+delphi-app/classes-dexed.jar
+delphi-app/libGemmaChatApp.so
+delphi-app/GemmaChatApp.classes/
+delphi-app/GemmaChatApp/

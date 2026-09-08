@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        This library does not declare INTERNET or storage permissions itself: model
+        acquisition (download + hashing + storage) is handled entirely on the Delphi side
+        (see GemmaEngineBridge / TModelDownloader in the FMX app). This module only ever
+        reads a local file path handed to it via GemmaEngine.initEngine(modelPath, ...).
+        The host app's AndroidManifest.xml is responsible for declaring INTERNET and any
+        storage-related permissions it needs for that download step.
+    -->
+
+</manifest>

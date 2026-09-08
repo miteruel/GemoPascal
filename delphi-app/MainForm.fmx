@@ -1,0 +1,13 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Gemma Chat'
+  ClientHeight = 800
+  ClientWidth = 467
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+end
